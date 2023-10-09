@@ -1,0 +1,60 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Escolha uma fonte legível como padrão */
+    background-color: #f4f4f4; /* Adiciona um tom de fundo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza o container verticalmente */
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff; /* Fundo branco para o container */
+    border-radius: 8px; /* Borda arredondada */
+    margin: 0 auto;
+    padding: 30px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Transição suave para o box-shadow */
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Um efeito de sombra um pouco mais profundo ao passar o mouse */
+}
+
+form, #reservationDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form select, form textarea, #reservationDetails div {
+    padding: 10px;
+    border: 1px solid #d1d1d1; /* Uma borda sutil */
+    border-radius: 5px; /* Borda arredondada nos elementos do formulário */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #5a67d8; /* Uma cor de destaque quando focado */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #5a67d8; /* Uma cor primária para o botão */
+    color: #ffffff; /* Cor de texto branca para o botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+form button:hover {
+    background-color: #434190; /* Uma cor ligeiramente mais escura para o botão ao passar o mouse */
+}
+
